@@ -4,7 +4,7 @@
     "description":"A NextJS web app for finding Live Hip Hop.",
     "url": "https://yoedmonton.com",
     "github": "https://github.com/SceptreData/yo-edmonton",
-    "img": "../../assets/yoedmonton-sm.jpg",
+    "img": "../images/yoedmonton-sm.jpg",
     "tech": ["Next.JS", "React"]
   },
   {
@@ -12,7 +12,7 @@
     "description":"A simple travel blog built  with Ionic",
     "url": "https://lost-on-purpose.netlify.app",
     "github": "https://github.com/SceptreData/wanderer",
-    "img": "../../assets/lost-on-purpose.jpg",
+    "img": "../images/lost-on-purpose.jpg",
     "tech": ["Ionic", "React"]
   },
   {
@@ -20,7 +20,7 @@
     "description": "My approach to building in React",
     "url": "https://dd-thinking-in-react.netlify.app/thinking-react/",
     "github": "https://github.com/SceptreData/dd-react",
-    "img": "../../assets/thinking-react.jpg",
+    "img": "../images/thinking-react.jpg",
     "tech": [ "Gatsby.JS", "React", "Waze"]
   },
   {
@@ -28,7 +28,7 @@
     "description": "The pizza place from your dreams.",
     "url": "https://cook-with-tony.netlify.app/",
     "github": "",
-    "img": "../../assets/tonys-kitchen.jpg",
+    "img": "../images/tonys-kitchen.jpg",
     "tech": ["Bootstrap", "HTML/CSS"]
   },
   {
@@ -36,7 +36,7 @@
     "description": "Prototype shooter in the browser canvas.",
     "url": "https://space-shooting.netlify.app",
     "github": "https://github.com/SceptreData/galagaJS",
-    "img": "../../assets/not-quite-galaga.jpg",
+    "img": "../images/not-quite-galaga.jpg",
     "tech": ["Vanilla Javascript"]
   },
 
@@ -45,7 +45,7 @@
     "description": "Mock dashboard for a celebrity chef.",
     "url": "https://tonys-dashboard.netlify.app/",
     "github": "",
-    "img": "../../assets/tonys-dashboard.jpg",
+    "img": "../images/tonys-dashboard.jpg",
     "tech": ["TailwindCSS", "HTML/CSS"]
   }
 ]

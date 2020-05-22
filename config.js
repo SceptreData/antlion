@@ -22,7 +22,7 @@ module.exports = {
   ],
   author: {
     name: "David Bergeron",
-    photo: "assets/photo.jpg",
+    photo: "static/photo.jpg",
     bio: "I like building web sites and solving problems.",
     contacts: {
       email: "david.f.bergeron@gmail.com",
