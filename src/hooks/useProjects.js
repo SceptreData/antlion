@@ -10,8 +10,10 @@ const useProjects = () => {
             node {
               id
               name
-              tech
+              description
               url
+              tech
+              github
               img {
                 publicURL
                 childImageSharp {

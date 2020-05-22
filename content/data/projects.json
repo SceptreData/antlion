@@ -1,38 +1,50 @@
 [
   {
     "name": "Yo'Edmonton",
+    "description":"A NextJS web app for finding Live Hip Hop.",
     "url": "https://yoedmonton.com",
-    "img": "../../assets/yoedmonton.png",
+    "github": "https://github.com/SceptreData/yo-edmonton",
+    "img": "../../assets/yoedmonton-sm.jpg",
     "tech": ["Next.JS", "React"]
   },
   {
     "name": "Lost On Purpose",
+    "description":"A simple travel blog built  with Ionic",
     "url": "https://lost-on-purpose.netlify.app",
-    "img": "../../assets/lost-on-purpose.png",
+    "github": "https://github.com/SceptreData/wanderer",
+    "img": "../../assets/lost-on-purpose.jpg",
     "tech": ["Ionic", "React"]
   },
   {
     "name": "Thinking in React",
+    "description": "My approach to building in React",
     "url": "https://dd-thinking-in-react.netlify.app/thinking-react/",
-    "img": "../../assets/thinking-react.png",
-    "tech": ["React", "Gatsby.JS"]
+    "github": "https://github.com/SceptreData/dd-react",
+    "img": "../../assets/thinking-react.jpg",
+    "tech": [ "Gatsby.JS", "React", "Waze"]
   },
   {
     "name": "Tony's Kitchen",
+    "description": "The pizza place from your dreams.",
     "url": "https://cook-with-tony.netlify.app/",
+    "github": "",
     "img": "../../assets/tonys-kitchen.jpg",
     "tech": ["Bootstrap", "HTML/CSS"]
   },
   {
     "name": "Space Shooting",
+    "description": "Prototype shooter in the browser canvas.",
     "url": "https://space-shooting.netlify.app",
-    "img": "not-quite-galaga.jpg",
+    "github": "https://github.com/SceptreData/galagaJS",
+    "img": "../../assets/not-quite-galaga.jpg",
     "tech": ["Vanilla Javascript"]
   },
 
   {
     "name": "Tony's Dashboard",
+    "description": "Mock dashboard for a celebrity chef.",
     "url": "https://tonys-dashboard.netlify.app/",
+    "github": "",
     "img": "../../assets/tonys-dashboard.jpg",
     "tech": ["TailwindCSS", "HTML/CSS"]
   }

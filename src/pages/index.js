@@ -9,16 +9,16 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Hi. I'm David</h1>
-      <p>I'm a developer, designer, and creation enthusiast.</p>
+      <h1>Hi. I'm David.</h1>
+      <p>I'm a developer, designer and altogether nerdy individual.</p>
       <p>
-        I make websites and apps using modern tools like Next.JS,Gatsby and
-        React Native.
+        I make apps and websites using modern tools like Next.JS,Gatsby and
+        React Native. I'm Currently living in the beautiful city of Edmonton,
+        Alberta.
       </p>
-      <p>Currently living in the beautiful city of Edmonton, Alberta.</p>
       <p>Check out some of the stuff I've built:</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-      <Projects limit={3} />
+      <Projects limit={6} />
     </Layout>
   )
 }

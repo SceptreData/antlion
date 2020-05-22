@@ -8,38 +8,28 @@ import { Screen, Color } from "../constants"
 import { useSiteMetadata } from "../hooks"
 
 export const Sidebar = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "photo.jpg" }) {
-  //       childImageSharp {
-  //         fixed(width: 80, height: 80, quality: 100) {
-  //           ...GatsbyImageSharpFixed_withWebp
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  // const { fixed: avatar } = data.file.childImageSharp
   const { author, menu } = useSiteMetadata()
   return (
     <Container>
       <InnerContainer>
-        <Link to="/">
-          <AvatarImg
-            src={withPrefix("photo.jpg")}
-            alt="A dashing photo of David Bergeron"
-          />
-        </Link>
+        <div className="content">
+          <Link to="/">
+            <AvatarImg
+              src={withPrefix("photo.jpg")}
+              alt="A dashing photo of David Bergeron"
+            />
+          </Link>
 
-        <MyName>{author.name}</MyName>
+          <MyName>{author.name}</MyName>
 
-        <BioText>
-          I like solving problems and building stuff for the web.
-        </BioText>
+          <BioText>
+            I like solving problems and building stuff for the web.
+          </BioText>
 
-        <Nav menu={menu} />
+          <Nav menu={menu} />
 
-        <Contacts contacts={author.contacts} />
+          <Contacts contacts={author.contacts} />
+        </div>
       </InnerContainer>
     </Container>
   )
@@ -91,13 +81,18 @@ const Container = styled.div`
   padding: 1.5625rem 1.25rem 0;
   @media (min-width: ${Screen.md}) {
     padding: 2.1875rem;
-    width: 30%;
+    /* width: 50%; */
+    max-width: 340px;
   }
 `
 
 const InnerContainer = styled.div`
   padding: 30px 20px 0;
   position: relative;
+  .content {
+    text-align: center;
+  }
+
   &:after {
     background: linear-gradient(
       180deg,
@@ -113,6 +108,12 @@ const InnerContainer = styled.div`
     top: 30px;
     right: -10px;
     bottom: 0;
+  }
+
+  @media (min-width: ${Screen.md}) {
+    .content {
+      text-align: left;
+    }
   }
 `
 
@@ -154,10 +155,15 @@ const StyledNav = styled.nav`
 `
 
 const ContactList = styled.ul`
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 9rem;
+  max-width: 9rem;
   justify-content: space-between;
+  @media (min-width: ${Screen.md}) {
+    margin: 0;
+  }
 `
 
 const IconLink = styled.a`
@@ -168,6 +174,7 @@ const IconLink = styled.a`
   display: flex;
   align-items: baseline;
   transition: color 0.15s ease-in-out;
+  margin-bottom: 1rem;
   &:hover {
     color: ${Color.primary};
   }
