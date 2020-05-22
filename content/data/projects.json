@@ -2,25 +2,25 @@
   {
     "name": "Yo'Edmonton",
     "url": "https://yoedmonton.com",
-    "img": "yoedmonton-lg.jpg",
+    "img": "../../assets/yoedmonton.png",
     "tech": ["Next.JS", "React"]
   },
   {
     "name": "Lost On Purpose",
     "url": "https://lost-on-purpose.netlify.app",
-    "img": "lost-on-purpose.jpg",
+    "img": "../../assets/lost-on-purpose.png",
     "tech": ["Ionic", "React"]
   },
   {
     "name": "Thinking in React",
     "url": "https://dd-thinking-in-react.netlify.app/thinking-react/",
-    "img": "thinking-react.jpg",
+    "img": "../../assets/thinking-react.png",
     "tech": ["React", "Gatsby.JS"]
   },
   {
     "name": "Tony's Kitchen",
     "url": "https://cook-with-tony.netlify.app/",
-    "img": "tonys-kitchen.jpg",
+    "img": "../../assets/tonys-kitchen.jpg",
     "tech": ["Bootstrap", "HTML/CSS"]
   },
   {
@@ -33,7 +33,7 @@
   {
     "name": "Tony's Dashboard",
     "url": "https://tonys-dashboard.netlify.app/",
-    "img": "tonys-dashboard.jpg",
+    "img": "../../assets/tonys-dashboard.jpg",
     "tech": ["TailwindCSS", "HTML/CSS"]
   }
 ]

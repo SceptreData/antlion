@@ -10,9 +10,16 @@ const useProjects = () => {
             node {
               id
               name
-              img
               tech
               url
+              img {
+                publicURL
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

@@ -1,37 +1,44 @@
 import React from "react"
 import styled from "styled-components"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link, useStaticQuery, graphql, withPrefix } from "gatsby"
+// import Img from "gatsby-image"
 import { Linkedin, GitHub, Twitter, Mail } from "react-feather"
 
 import { Screen, Color } from "../constants"
 import { useSiteMetadata } from "../hooks"
 
 export const Sidebar = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "photo.jpg" }) {
-        childImageSharp {
-          fixed(width: 80, height: 80, quality: 100) {
-            ...GatsbyImageSharpFixed_withWebp
-          }
-        }
-      }
-    }
-  `)
-  const { fixed: avatar } = data.file.childImageSharp
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     file(relativePath: { eq: "photo.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 80, height: 80, quality: 100) {
+  //           ...GatsbyImageSharpFixed_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // const { fixed: avatar } = data.file.childImageSharp
   const { author, menu } = useSiteMetadata()
   return (
     <Container>
       <InnerContainer>
         <Link to="/">
-          <AvatarImg fixed={avatar} alt="A dashing photo of David Bergeron" />
+          <AvatarImg
+            src={withPrefix("photo.jpg")}
+            alt="A dashing photo of David Bergeron"
+          />
         </Link>
+
         <MyName>{author.name}</MyName>
+
         <BioText>
           I like solving problems and building stuff for the web.
         </BioText>
+
         <Nav menu={menu} />
+
         <Contacts contacts={author.contacts} />
       </InnerContainer>
     </Container>
@@ -109,8 +116,10 @@ const InnerContainer = styled.div`
   }
 `
 
-const AvatarImg = styled(Img)`
+const AvatarImg = styled.img`
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
 `
 
 const MyName = styled.h2`
